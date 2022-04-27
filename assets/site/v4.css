@@ -1,0 +1,547 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#headerContainer {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 940px;
+}
+
+#headerContainer div {
+    border: none transparent;
+}
+
+#sub-menu span,
+#sub-menu a,
+#community-sub-menu span,
+#community-sub-menu a {
+    font-size: 13px;
+    line-height: 15px;
+    font-family: 'Arial';
+    /*font-family: 'DINPro-Medium', 'Roboto-Medium';*/
+}
+
+#community-sub-menu a span {
+    padding-top: 5px;
+}
+
+#headerContainer a:hover {
+    color: #0f0 !important;
+}
+
+#sub-sections span {
+    text-transform: capitalize;
+}
+
+#sub-sections ul.cult span,
+#sub-sections ul.team span,
+#sub-sections ul.downloads span {
+    text-transform: none;
+}
+
+#headerContainer #main-menu-links {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 9999;
+}
+
+#headerContainer #main-menu-links ul li {
+    float: left;
+    padding-right: 40px;
+}
+
+#headerContainer #main-menu-links ul li a {
+    color: #F2EDE7;
+    font-size: 15px;
+    line-height: 44px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto-Bold';
+}
+
+#headerContainer #main-menu-links ul li a.text-selected {
+    color: #0f0;
+}
+
+#headerContainer #razer-logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#centerwrapper {
+    z-index: 999;
+    float: left;
+    width: 100%;
+    height: 77px;
+    /*	background: url("http://assets.razerzone.com/eeimages/assets/images/common/header/background.png") repeat-x;*/
+    /*	background-color: green;*/
+    clear: both;
+}
+
+#centercolumn {
+    margin: 0 10px 0 10px;
+    /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+    background-color: #000;
+    /*	background-image: url("http://assets.razerzone.com/eeimages/assets/images/common/header/background.png");*/
+    border-top: 1px solid #222 !important;
+    height: 77px;
+}
+
+#centercolumn .drCart {
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/cart.png") no-repeat scroll left 3px transparent;
+    color: #444444;
+    float: right;
+    height: 20px;
+    margin-top: 0;
+    margin-left: 50px;
+    text-align: right;
+    width: auto;
+}
+
+#centercolumn .drCart #dr_cartSummary {
+    font-family: DINPro-Regular, Roboto-Regular;
+    height: 15px;
+    text-align: left;
+    width: auto;
+    color: #666666;
+}
+
+#centercolumn .drCart #dr_cartSummary p {
+    height: auto;
+    padding-left: 15px;
+    text-align: right;
+    margin: 2px 3px 3px !important;
+}
+
+#centercolumn #searchStoreFrm .searchStoreTxt {
+    background: none repeat scroll 0 0 #000000;
+    border-color: #202020;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 0;
+    color: #CCCCCC;
+    float: left;
+    font-size: 11px;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    width: 180px;
+}
+
+#centercolumn #searchStore {
+    float: right;
+    padding: 5px 0;
+}
+
+#centercolumn #buttonSearchStore {
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/search-icon.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 27px;
+    width: 22px;
+}
+
+#centercolumn .search-curve-corners {
+    background: none repeat scroll 0 0 #000000;
+    border: 1px solid #333333;
+    border-radius: 45px 45px 45px 45px;
+    box-shadow: 1px 2px 6px rgba(5, 5, 5, 0.5);
+    height: 15px;
+}
+
+#leftcolumn {
+    float: left;
+    width: 10px;
+    /*Width of left column*/
+    height: 77px;
+    margin-left: -100%;
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/header/left.png") no-repeat scroll 0 0 transparent;
+}
+
+#rightcolumn {
+    float: left;
+    width: 10px;
+    /*Width of right column*/
+    height: 77px;
+    margin-left: -10px;
+    /*Set left marginto -(RightColumnWidth)*/
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/header/right.png") no-repeat scroll 0 0 transparent;
+}
+
+#footerContainer {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /*height: 44px;*/
+    font-size: 11px;
+    color: #CCCCCC;
+    position: relative;
+    width: 940px;
+    margin-top: 12px;
+}
+
+#footerContainer .left-border {
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/footer-left.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 44px;
+    width: 11px;
+    margin-left: -100%;
+}
+
+#footerContainer .right-border {
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/footer-right.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 44px;
+    width: 11px;
+    margin-left: -11px;
+}
+
+#footerContainer .content-wrapper {
+    z-index: 999;
+    float: left;
+    width: 100%;
+    height: 44px;
+    /*	background-color: green;*/
+    clear: both;
+}
+
+#footerContainer .center-content {
+    border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+    height: 42px;
+    background-color: #000;
+    margin: 0 10px 0 10px;
+    /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+}
+
+#footerContainer .center-content .left {
+    padding-top: 13px;
+    padding-left: 3px;
+}
+
+#footerContainer .center-content .right {
+    padding-top: 16px;
+    display: inline-block;
+}
+
+#footerContainer .center-content .right ul li {
+    display: inline-block;
+}
+
+#headerContainer #header-foot {
+    clear: both;
+    margin-top: -1px;
+}
+
+#header-foot .bottomcenter {
+    float: left;
+    width: 100%;
+    height: 10px;
+    /*	background: url("http://assets.razerzone.com/eeimages/assets/images/common/header/bottom-bg.png");*/
+    clear: both;
+}
+
+#header-foot .centercolumn {
+    margin: 0 10px 0 10px;
+    /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+    border-bottom: 1px solid #222;
+    background-color: #000;
+    height: 10px;
+}
+
+#header-foot .bottomleft {
+    float: left;
+    width: 10px;
+    /*Width of left column*/
+    height: 10px;
+    margin-left: -100%;
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/header/bottom-left.png") no-repeat scroll 0 0 transparent;
+}
+
+#header-foot .bottomright {
+    float: left;
+    width: 10px;
+    /*Width of right column*/
+    height: 10px;
+    margin-left: -10px;
+    /*Set left marginto -(RightColumnWidth)*/
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/header/bottom-right.png") no-repeat scroll 0 0 transparent;
+}
+
+#headerContainer ul li {
+    display: inline;
+    float: left !important;
+    list-style: none outside none;
+}
+
+#headerContainer div#sub-menu,
+#headerContainer div#community-sub-menu {
+    clear: left;
+    margin: 0 auto;
+    position: relative;
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+    text-transform: uppercase;
+    text-align: center;
+    -moz-transition: All .25s ease;
+    -webkit-transition: All .25s ease;
+    -o-transition: All .25s ease;
+    transition: All .25s ease;
+    /*	initial attributes*/
+    height: 0px;
+    opacity: 0;
+    z-index: -99;
+}
+
+#headerContainer div#sub-menu.show,
+#headerContainer div#community-sub-menu.show {
+    height: 130px !important;
+    /* change height*/
+    opacity: 1 !important;
+    z-index: 99;
+    transition: All .35s ease;
+    -moz-transition: All .35s ease;
+    -webkit-transition: All .35s ease;
+    -o-transition: All .35s ease;
+}
+
+#sub-menu div#mini-section {
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    margin: 0 auto;
+    float: none !important;
+    background-color: #000;
+    border-top: 1px solid #333;
+    /* inital state of the mini section (hidden) */
+    opacity: 0;
+    top: -30px;
+    z-index: -1;
+    -moz-transition: All .15s ease;
+    -webkit-transition: All .15s ease;
+    -o-transition: All .15s ease;
+    transition: All .15s ease;
+}
+
+#sub-menu.show div#mini-section.show {
+    opacity: 1;
+    top: 0px;
+    z-index: 1;
+    -moz-transition: All .35s ease;
+    -webkit-transition: All .35s ease;
+    -o-transition: All .35s ease;
+    transition: All .35s ease;
+}
+
+#sub-menu div#mini-section ul {
+    display: inline-block !important;
+    margin: 0 auto;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom: 1;
+    *display: inline;
+}
+
+#sub-menu div#mini-section ul li {
+    width: 125px;
+    padding: 10px 3px;
+}
+
+#sub-menu div#mini-section ul li.selected {
+    background-image: url("http://assets.razerzone.com/eeimages/assets/images/common/category-product-specific-bg.jpg");
+    /*	background-image: url("http://assets.razerzone.com/eeimages/assets/images/common/header/mini-header-selected.png");*/
+}
+
+#sub-menu div#mini-section ul li.selected span a {
+    color: #0f0;
+}
+
+#sub-menu div#mini-section ul li a {
+    display: block;
+    color: #fff;
+}
+
+#sub-menu div#mini-section ul li a:hover {
+    color: #0f0;
+}
+
+#sub-menu.show div#mini-section.show {
+    opacity: 1;
+    top: 0px;
+    z-index: 1;
+    -moz-transition: All .35s ease;
+    -webkit-transition: All .35s ease;
+    -o-transition: All .35s ease;
+    transition: All .35s ease;
+}
+
+#sub-menu div#main-section,
+#community-sub-menu div#community-main-section {
+    background-image: url("http://assets.razerzone.com/eeimages/assets/images/common/header/submenu-bg.png");
+    bottom: 0;
+    float: none !important;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: -150px;
+    width: 100%;
+    z-index: -99;
+    transition: All .25s ease;
+    -moz-transition: All .25s ease;
+    -webkit-transition: All .25s ease;
+    -o-transition: All .25s ease;
+}
+
+#sub-menu.show #main-section {
+    z-index: 999;
+}
+
+#sub-menu.show #main-section,
+#community-sub-menu.show #community-main-section {
+    opacity: 1;
+    top: 0px;
+    z-index: 10;
+    transition: All .35s ease;
+    -moz-transition: All .35s ease;
+    -webkit-transition: All .35s ease;
+    -o-transition: All .35s ease;
+}
+
+#sub-menu.show #main-section.hide,
+#community-sub-menu.show #community-main-section.hide {
+    top: -80px;
+    z-index: -10;
+    opacity: 0 !important;
+    transition: All .5s ease;
+    -moz-transition: All .5s ease;
+    -webkit-transition: All .5s ease;
+    -o-transition: All .5s ease;
+}
+
+#main-section ul,
+#community-main-section ul {
+    text-align: center;
+    display: inline-block !important;
+}
+
+#main-section ul li {
+    padding: 0 4px;
+    width: 145px;
+}
+
+/* custom image fix for community icons */
+
+#community-main-section ul li {
+    padding: 0 5px;
+    width: 150px;
+}
+
+#community-main-section ul li a img {
+    padding: 2px 2px 0;
+}
+
+/* custom image fix for community icons */
+
+#sub-menu.show,
+#community-sub-menu.show {
+    background: url("http://assets.razerzone.com/eeimages/assets/images/common/category-product-lines-bg.jpg") repeat-x scroll 0 36px transparent;
+    /*	background-image: url("http://assets.razerzone.com/eeimages/assets/images/common/header/submenu-sections-bg.png");*/
+    /*	background-image: url("http://assets.razerzone.com/eeimages/assets/images/common/header/submenu-sections-bg.png");*/
+}
+
+/* holder of the sub sections */
+
+#sub-menu div#sub-sections div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    float: none !important;
+    /*	background-image: url("http://assets.razerzone.com/eeimages/assets/images/common/header/submenu-sections-bg.png");*/
+    /*	temp*/
+    /*	border: 1px solid #fff;*/
+    /*	background-color: #000*/
+}
+
+#sub-menu div#sub-sections div ul {
+    display: inline-block !important;
+    margin: 0;
+    /*	padding: 0 30px;*/
+    bottom: 0;
+    position: relative;
+    /* initial location */
+    left: 0px;
+    opacity: 0 !important;
+    /* inital state of the mini section (hidden) */
+    /*	temp*/
+    /*	border: 1px solid #00f;*/
+    -moz-transition: All .2s ease .2s;
+    -webkit-transition: All .2s ease .2s;
+    -o-transition: All .2s ease .2s;
+    transition: All .2s ease .2s;
+    /* For IE, the outcast */
+    zoom: 1;
+    *display: inline;
+}
+
+#sub-menu div#sub-sections ul li {
+    width: 135px;
+    padding: 0 10px;
+    display: none;
+    /*	temp*/
+    /*	border: 1px solid gray;*/
+    -moz-transition: All .2s ease .2s;
+    -webkit-transition: All .2s ease .2s;
+    -o-transition: All .2s ease .2s;
+    transition: All .2s ease .2s;
+}
+
+#sub-menu div#sub-sections ul.peripherals li {
+    width: 130px;
+    padding: 0;
+}
+
+#sub-menu div#sub-sections ul li a {
+    display: block;
+    color: #fff;
+}
+
+#sub-menu.show div#sub-sections div ul.show {
+    opacity: 1 !important;
+    /*	left: 0px;*/
+    z-index: 9;
+    -moz-transition: All .2s ease .2s;
+    -webkit-transition: All .2s ease .2s;
+    -o-transition: All .2s ease .2s;
+    transition: All .2s ease .2s;
+}
+
+#sub-menu.show div#sub-sections div ul.show li {
+    display: block;
+    -moz-transition: All .2s ease .2s;
+    -webkit-transition: All .2s ease .2s;
+    -o-transition: All .2s ease .2s;
+    transition: All .2s ease .2s;
+}
+
+#product_related_display {
+    z-index: 999999;
+}
+
+.product_line_no_link {
+    font-family: DINPro-Medium, Roboto-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 4px;
+    display: block;
+    float: left;
+    /*font-weight: bold;*/
+}

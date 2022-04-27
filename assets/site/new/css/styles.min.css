@@ -1,0 +1,3707 @@
+@charset "UTF-8";
+:root {
+    --mdc-theme-primary: #44d62c;
+    --mdc-theme-secondary: #008900;
+    --mdc-theme-surface: #222;
+    --mdc-theme-on-surface: rgba(165, 165, 165, 0.52);
+    --mdc-theme-error: #c8323c;
+    --text-color: #999;
+    --mdc-theme-text-primary-on-background: (165, 165, 165, 0.52);
+    --color-black: hsl(0, 0%, 0%);
+    --color-gray: #888;
+    --color-gray-100: #111;
+    --color-gray-200: #222;
+    --color-gray-300: #333;
+    --color-gray-400: #444;
+    --color-gray-500: #555;
+    --color-gray-600: #666;
+    --color-gray-700: #777;
+    --color-gray-800: var(--color-gray);
+    --color-gray-900: #999;
+    --color-gray-10: hsl(0, 0%, 10%);
+    --color-gray-15: hsl(0, 0%, 15%);
+    --color-gray-20: hsl(0, 0%, 20%);
+    --color-gray-25: hsl(0, 0%, 25%);
+    --color-gray-30: hsl(0, 0%, 30%);
+    --color-gray-35: hsl(0, 0%, 35%);
+    --color-gray-40: hsl(0, 0%, 40%);
+    --color-gray-45: hsl(0, 0%, 45%);
+    --color-gray-50: hsl(0, 0%, 50%);
+    --color-gray-55: hsl(0, 0%, 55%);
+    --color-gray-60: hsl(0, 0%, 60%);
+    --color-gray-65: hsl(0, 0%, 65%);
+    --color-gray-70: hsl(0, 0%, 70%);
+    --color-gray-75: hsl(0, 0%, 75%);
+    --color-gray-80: hsl(0, 0%, 80%);
+    --color-gray-85: hsl(0, 0%, 85%);
+    --color-gray-90: hsl(0, 0%, 90%);
+    --color-gray-95: hsl(0, 0%, 95%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-green: #44d62c;
+    --font-family-Roboto: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    --font-family-RazerF5: RazerF5, helvetica neue, Arial, noto sans, sans-serif;
+    --primary: var(--color-green);
+    font-size: 16px
+}
+
+* {
+    box-sizing: border-box
+}
+
+* :focus-visible {
+    outline-style: solid;
+    outline-color: #6d9df7;
+    outline-width: 2px;
+    outline-offset: 2px
+}
+
+body {
+    background: none #222;
+    width: initial
+}
+
+body * {
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-weight: 300;
+    box-sizing: border-box
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 32px
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 32px
+}
+
+p {
+    font-size: 18px;
+    line-height: 20px;
+    color: #999
+}
+
+a {
+    color: #fff
+}
+
+a:visited {
+    color: #fff
+}
+
+a:active {
+    color: #fff
+}
+
+a:focus-visible:not(:focus-within) {
+    color: #fff;
+    outline-style: solid;
+    outline-color: #6d9df7;
+    outline-width: 2px;
+    outline-offset: 2px
+}
+
+a:hover {
+    color: #44f62c;
+    text-decoration: none
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto
+}
+
+@media (max-width:980px) {
+    .container {
+        max-width: 980px
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%
+    }
+}
+
+@media (max-width:420px) {
+    .container {
+        width: 100%
+    }
+}
+
+.active {
+    color: #0f0 !important
+}
+
+.active>* {
+    color: #0f0 !important
+}
+
+.row {
+    position: relative;
+    z-index: 1
+}
+
+.mobile {
+    display: none
+}
+
+@media (max-width:420px) {
+    .mobile {
+        display: block
+    }
+}
+
+.show-647 {
+    display: none
+}
+
+@media screen and (max-width:645px) {
+    .show-647 {
+        display: block
+    }
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
+.gray-9 {
+    color: #999
+}
+
+.icons {
+    text-align: left;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(//assets.razerzone.com/support/images/iconsprite_v1.png) 0 0 no-repeat
+}
+
+.icons.faq {
+    background-position: 0 0
+}
+
+.icons.software {
+    background-position: 0 -127px
+}
+
+.icons.masterguide {
+    background-position: 0 -254px
+}
+
+.icons.productoverview {
+    background-position: 0 -380px
+}
+
+.icons.techspec {
+    background-position: 0 -508px
+}
+
+.icons.gallery {
+    background-position: 0 -635px
+}
+
+.icons.sparepart {
+    background-position: 0 -889px
+}
+
+.icons.contact {
+    background-position: 0 -761px
+}
+
+.icons.order-status {
+    background: url(https://assets.razerzone.com/support/images/new/order_status.svg) 0 0 no-repeat
+}
+
+.icons.warranty {
+    background: url(https://assets.razerzone.com/support/images/new/warranty.svg) 0 0 no-repeat
+}
+
+.support-link {
+    font-family: RazerF5Light, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-size: 1.125rem
+}
+
+.button {
+    background-color: #44d62c;
+    border: 0;
+    border-radius: .1875rem;
+    color: #000 !important;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: .725rem 1.625rem;
+    outline: 0
+}
+
+.button:hover {
+    background-color: #73e161;
+    color: #000
+}
+
+.country-selector-wapper {
+    display: flex;
+    justify-content: space-between
+}
+
+.country-selector-popup div.country-selector-region#asia-pacific {
+    width: 17%
+}
+
+@media screen and (max-width:645px) {
+    .country-selector-wapper {
+        flex-direction: column
+    }
+    .country-selector-popup div.country-selector-region#asia-pacific {
+        width: 50%
+    }
+    .country-selector-popup div.country-selector-region#north-america {
+        width: 100%
+    }
+    .country-selector-popup div.country-selector-region#europe {
+        width: 100%
+    }
+    .country-selector-popup div.country-selector-region#middle-east {
+        width: 100%;
+        display: inline-block
+    }
+}
+
+.search-nav {
+    max-width: 40%;
+    max-height: 80px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 25px
+}
+
+.search-nav-desktop {
+    float: right
+}
+
+.custom-search-input {
+    max-height: 40px;
+    width: 100%;
+    height: 30px;
+    margin: 0 auto
+}
+
+.custom-search-input .input-group {
+    width: 100%;
+    height: 100%;
+    background: 0 0;
+    border: 1px solid #999;
+    text-align: left;
+    display: table
+}
+
+.custom-search-input .input-group button {
+    position: absolute;
+    right: 0;
+    background: url(https://assets.razerzone.com/support/images/new/search-icon.png) center center no-repeat transparent;
+    width: 34px;
+    height: 100%;
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    font-weight: 400
+}
+
+.custom-search-input .input-group input {
+    position: absolute;
+    color: #ccc;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    background: none transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    overflow: hidden
+}
+
+.custom-search-input .input-group input::-webkit-input-placeholder {
+    color: #ccc
+}
+
+.custom-search-input .input-group input:-ms-input-placeholder {
+    color: #ccc
+}
+
+.custom-search-input .input-group input::-moz-placeholder {
+    color: #ccc
+}
+
+.custom-search-input .input-group input::placeholder {
+    color: #ccc;
+    opacity: .8
+}
+
+.search-nav-mobile {
+    display: none
+}
+
+.search-nav-mobile-btn {
+    display: none
+}
+
+.covid-19-msg {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c8323c;
+    padding: 1rem .8rem
+}
+
+.covid-19-msg p {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0 0 20px 0
+}
+
+.covid-19-msg p:last-of-type {
+    margin: 0
+}
+
+.link-dark,
+.link-dark:visited {
+    font-size: inherit;
+    font-weight: inherit;
+    color: #44d62c
+}
+
+.link-dark:hover {
+    color: #44d62c;
+    text-decoration: underline
+}
+
+.link-dark:active {
+    color: #008900
+}
+
+@media screen and (max-width:1024px) {
+    .search-nav {
+        max-width: 68%
+    }
+}
+
+@media screen and (max-width:800px) {
+    .search-nav-desktop {
+        display: none
+    }
+    .search-nav-mobile {
+        position: fixed;
+        display: none;
+        top: 80px;
+        width: 100%;
+        max-width: unset;
+        left: 0;
+        background: none #545454;
+        z-index: 10
+    }
+    .search-nav-mobile .custom-search-input .input-group {
+        border: 1px solid #333
+    }
+    .search-nav-mobile .custom-search-input .input-group input {
+        color: #eee
+    }
+    .search-nav-mobile .custom-search-input .input-group input::-webkit-input-placeholder {
+        color: #ccc
+    }
+    .search-nav-mobile .custom-search-input .input-group input:-ms-input-placeholder {
+        color: #ccc
+    }
+    .search-nav-mobile .custom-search-input .input-group input::-moz-placeholder {
+        color: #ccc
+    }
+    .search-nav-mobile .custom-search-input .input-group input::placeholder {
+        color: #ccc
+    }
+    .search-nav-mobile-btn {
+        float: right;
+        display: inline-block;
+        height: 80px;
+        background: 0 0;
+        border: none;
+        width: 50px;
+        padding: 20px 10px;
+        outline: 0
+    }
+    .search-nav-mobile-btn.active {
+        background: #545454
+    }
+}
+
+#search-section {
+    background: none #555;
+    text-align: center
+}
+
+@media (max-width:980px) {
+    #search-section {
+        max-width: 980px
+    }
+}
+
+@media (max-width:768px) {
+    #search-section {
+        width: 100%
+    }
+}
+
+@media (max-width:320px) {
+    #search-section {
+        width: 100%
+    }
+}
+
+#search-section .container {
+    padding: 2.8125rem 0 2.1875rem 0
+}
+
+#search-section h1 {
+    font-size: 2.25rem;
+    font-family: RazerF5Thin, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    color: #000;
+    line-height: 2.625rem
+}
+
+#search-section h2 {
+    color: #fff
+}
+
+#search-section p {
+    font-size: 18px;
+    color: #999;
+    margin: .9375rem 0
+}
+
+#search-section small {
+    display: block;
+    color: #999;
+    margin: .625rem 0
+}
+
+@media screen and (max-width:420px) {
+    #search-section small {
+        padding: 0 20%
+    }
+}
+
+#search-section .custom-search-input {
+    max-width: 700px;
+    max-height: 50px;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto
+}
+
+@media screen and (max-width:768px) {
+    #search-section .custom-search-input {
+        max-width: 680px;
+        padding: 0 .625rem
+    }
+}
+
+@media screen and (max-width:420px) {
+    #search-section .custom-search-input {
+        max-width: 278px;
+        width: 278px;
+        margin: 0 auto
+    }
+}
+
+#search-section .custom-search-input .input-group {
+    background: none rgba(0, 0, 0, .2);
+    border: 1px solid #b0b0b0;
+    border-radius: .1875rem;
+    display: table;
+    height: 100%;
+    text-align: left;
+    width: 100%
+}
+
+#search-section .custom-search-input .input-group input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    background: none #b0b0b0;
+    background: none transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    overflow: hidden
+}
+
+#search-section .custom-search-input .input-group input::placeholder {
+    color: #999
+}
+
+@media (max-width:420px) {
+    #search-section .custom-search-input .input-group input {
+        width: 100%
+    }
+}
+
+#search-section .custom-search-input .input-group button {
+    position: absolute;
+    right: 0;
+    background: url(https://assets.razerzone.com/support/images/new/search-icon.png) center center no-repeat transparent;
+    width: 34px;
+    height: 100%;
+    cursor: pointer;
+    border: 0
+}
+
+#search-section.main-search {
+    background: url(https://assets.razerzone.com/support/images/new/home_search_bg.jpg) center top no-repeat #222;
+    min-height: 315px;
+    text-align: center
+}
+
+#search-section.main-search .container {
+    padding: 6.25rem 0 7.5rem 0
+}
+
+#search-section.main-search h1 {
+    color: #fff;
+    font-size: 2.25rem;
+    font-family: RazerF5Thin, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    margin-bottom: 2rem;
+    line-height: 2.625rem
+}
+
+@media screen and (max-width:420px) {
+    #search-section.main-search h1 {
+        font-size: 1.5rem
+    }
+}
+
+#search-section.main-search p {
+    font-size: 1.25rem;
+    color: #999;
+    margin-bottom: 1.875rem
+}
+
+#search-section.main-search .custom-search-input {
+    max-width: 700px;
+    max-height: 50px;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto
+}
+
+@media (max-width:768px) {
+    #search-section.main-search .custom-search-input {
+        max-width: 680px;
+        padding: 0 1.875rem
+    }
+}
+
+@media (max-width:420px) {
+    #search-section.main-search .custom-search-input {
+        max-width: 400px
+    }
+}
+
+#search-section.main-search .custom-search-input .row {
+    margin: 0
+}
+
+#search-section.main-search .custom-search-input .input-group {
+    background: none rgba(0, 0, 0, .2);
+    border: 1px solid #b0b0b0;
+    border-radius: .1875rem;
+    display: block;
+    height: 100%;
+    text-align: left;
+    width: 100%
+}
+
+#search-section.main-search .custom-search-input .input-group input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    background: none #b0b0b0;
+    background: none transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    overflow: hidden
+}
+
+#search-section.main-search .custom-search-input .input-group input::placeholder {
+    color: #999
+}
+
+@media (max-width:420px) {
+    #search-section.main-search .custom-search-input .input-group input {
+        width: 100%
+    }
+}
+
+#search-section.main-search .custom-search-input .input-group button {
+    position: absolute;
+    right: 0;
+    background: url(https://assets.razerzone.com/support/images/new/search-icon.png) center center no-repeat transparent;
+    width: 34px;
+    height: 100%;
+    top: 0;
+    cursor: pointer
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #999
+}
+
+.dark-popup {
+    position: relative;
+    background: #111;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto
+}
+
+.dark-popup:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.dark-popup p {
+    font-size: 14px
+}
+
+.dark-popup .model-number-wapper .model-number {
+    display: none
+}
+
+.dark-popup .model-number-wapper .model-number img {
+    width: 100%
+}
+
+.dark-popup .model-number-wapper .model-number p {
+    margin-right: .3125rem
+}
+
+@media (max-width:420px) {
+    .dark-popup .model-number-wapper .model-number {
+        width: 100%
+    }
+}
+
+.dark-popup .model-number-wapper .show-model-number {
+    display: block
+}
+
+.country-selector-popup {
+    position: relative;
+    background: #333;
+    padding: 20px;
+    width: auto;
+    max-width: 800px;
+    margin: 20px auto
+}
+
+.country-selector-popup:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+@media screen and (max-width:645px) {
+    .country-selector-popup {
+        max-width: 500px
+    }
+}
+
+.country-selector-popup p {
+    font-size: 14px
+}
+
+.country-selector-popup .model-number-wapper .model-number {
+    display: none
+}
+
+.country-selector-popup .model-number-wapper .model-number img {
+    width: 100%
+}
+
+.country-selector-popup .model-number-wapper .model-number p {
+    margin-right: .3125rem
+}
+
+@media (max-width:420px) {
+    .country-selector-popup .model-number-wapper .model-number {
+        width: 100%
+    }
+}
+
+.country-selector-popup h2 {
+    font-size: 24px;
+    color: #fff
+}
+
+.country-selector-popup>p {
+    font-size: .875rem;
+    padding-top: .625rem;
+    padding-bottom: .9375rem
+}
+
+.country-selector-popup div.country-selector-region {
+    width: 33%;
+    display: inline-block
+}
+
+.country-selector-popup div.country-selector-region#north-america {
+    width: 18%
+}
+
+@media screen and (max-width:645px) {
+    .country-selector-popup div.country-selector-region#north-america {
+        width: 100%
+    }
+}
+
+.country-selector-popup div.country-selector-region#europe {
+    width: 36%
+}
+
+@media screen and (max-width:645px) {
+    .country-selector-popup div.country-selector-region#europe {
+        width: 100%
+    }
+}
+
+.country-selector-popup div.country-selector-region#europe ul li {
+    width: 50%;
+    float: left
+}
+
+.country-selector-popup div.country-selector-region#europe ul:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.country-selector-popup div.country-selector-region#asia-pacific {
+    width: 20%
+}
+
+@media screen and (max-width:645px) {
+    .country-selector-popup div.country-selector-region#asia-pacific {
+        width: 100%
+    }
+}
+
+.country-selector-popup div.country-selector-region#middle-east {
+    width: 15%
+}
+
+@media screen and (max-width:645px) {
+    .country-selector-popup div.country-selector-region#middle-east {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:645px) {
+    .country-selector-popup div.country-selector-region {
+        display: block;
+        border-bottom: 1px solid #666
+    }
+}
+
+.country-selector-popup div.country-selector-region h3 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 18px;
+    padding: .625rem 0 1.25rem 0
+}
+
+.country-selector-popup div.country-selector-region ul {
+    padding-bottom: .625rem
+}
+
+.country-selector-popup div.country-selector-region:last-of-type {
+    border-bottom: none
+}
+
+.country-selector-popup div.country-selector-region:last-of-type ul {
+    padding-bottom: 0
+}
+
+.country-selector-popup a {
+    font-size: 12px;
+    color: #b0b0b0
+}
+
+.country-selector-popup a:hover {
+    color: #fff
+}
+
+.country-selector-popup .ie {
+    width: 22px;
+    height: 13px;
+    display: inline-block
+}
+
+.country-selector-popup .ap {
+    width: 16px;
+    height: 11px;
+    margin-top: 0;
+    margin-left: 2px;
+    margin-right: 5px
+}
+
+.sprite {
+    background: url(https://assets.razerzone.com/support/images/new/flags.png) no-repeat
+}
+
+.ie {
+    width: 18px;
+    height: 12px
+}
+
+.ap {
+    background: url(https://assets.razerzone.com/support/images/new/flags2.png);
+    background-position: 16px 132px;
+    width: 16px;
+    height: 11px;
+    margin-top: 2px
+}
+
+.eur {
+    background-position: -108px -340px
+}
+
+.de {
+    background-position: -36px -171px
+}
+
+.es {
+    background-position: -36px -204px
+}
+
+.jp {
+    background-position: -108px -70px
+}
+
+.kr {
+    background-position: -108px -306px
+}
+
+.cn {
+    background-position: 0 -35px
+}
+
+.be {
+    background-position: -36px 0
+}
+
+.cr {
+    background-position: -36px -34px
+}
+
+.cy {
+    background-position: -36px -67px
+}
+
+.re {
+    background-position: -36px -103px
+}
+
+.de {
+    background-position: -36px -138px
+}
+
+.deu {
+    background-position: -36px -171px
+}
+
+.esp {
+    background-position: -36px -204px
+}
+
+.es {
+    background-position: -36px -238px
+}
+
+.fin {
+    background-position: -36px -272px
+}
+
+.fra {
+    background-position: -36px -306px
+}
+
+.gre {
+    background-position: -36px -340px
+}
+
+.hun {
+    background-position: -36px -374px
+}
+
+.ire {
+    background-position: -36px -408px
+}
+
+.ita {
+    background-position: -36px -442px
+}
+
+.lat {
+    background-position: -72px 0
+}
+
+.lux {
+    background-position: -72px -36px
+}
+
+.mal {
+    background-position: -72px -66px
+}
+
+.net {
+    background-position: -72px -103px
+}
+
+.nor {
+    background-position: -72px -138px
+}
+
+.ost {
+    background-position: -72px -171px
+}
+
+.pol {
+    background-position: -72px -204px
+}
+
+.por {
+    background-position: -72px -238px
+}
+
+.rus {
+    background-position: -72px -272px
+}
+
+.slo {
+    background-position: -72px -306px
+}
+
+.slovev {
+    background-position: -72px -340px
+}
+
+.swe {
+    background-position: -72px -374px
+}
+
+.swi {
+    background-position: -72px -408px
+}
+
+.kin {
+    background-position: -72px -442px
+}
+
+.aus {
+    background-position: -108px 0
+}
+
+.bru {
+    background-position: -108px -36px
+}
+
+.jap {
+    background-position: -108px -70px
+}
+
+.maly {
+    background-position: -108px -103px
+}
+
+.zea {
+    background-position: -108px -138px
+}
+
+.sing {
+    background-position: -108px -171px
+}
+
+.chi {
+    background-position: -108px -204px
+}
+
+.honk {
+    background-position: -108px -238px
+}
+
+.taiw {
+    background-position: -108px -272px
+}
+
+.kore {
+    background-position: -108px -306px
+}
+
+.phi {
+    background-position: -108px -373px
+}
+
+.thai {
+    background-position: -108px -408px
+}
+
+.za {
+    background-position: 0 -170px
+}
+
+header {
+    background: none #000;
+    box-shadow: 0 2px 5px #111;
+    border-bottom: 1px solid #44d62c
+}
+
+.hide {
+    display: none !important
+}
+
+.show {
+    display: block !important
+}
+
+.skip-link {
+    background: #000;
+    width: auto;
+    position: absolute;
+    height: auto;
+    text-align: center;
+    top: -100%;
+    z-index: -2;
+    width: 100%;
+    padding: 14px;
+    text-decoration: underline !important
+}
+
+.skip-link:focus {
+    border: 2px solid #6d9df7;
+    color: var(--color-green);
+    top: 0;
+    z-index: 10
+}
+
+.skip-link:hover {
+    color: var(--color-green);
+    text-decoration: underline !important
+}
+
+.skip-link:focus-visible {
+    outline: 0 !important
+}
+
+#main-content:focus-visible {
+    outline: 0
+}
+
+section {
+    position: relative
+}
+
+section#top-nav {
+    background: 0 0;
+    min-height: 50px;
+    width: 100%;
+    z-index: 9
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav {
+        min-height: 60px
+    }
+}
+
+section#top-nav .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    position: relative
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container {
+        min-height: 60px
+    }
+}
+
+@media screen and (max-width:980px) {
+    section#top-nav .container {
+        padding: 0 .625rem
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section#top-nav .container {
+        max-width: 1200px
+    }
+}
+
+section#top-nav .container .mobile-hide {
+    display: none
+}
+
+section#top-nav .container .mobile-overlay {
+    background: #040404;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .mobile-hide {
+        display: initial
+    }
+}
+
+section#top-nav .container .mobileNavButton.show .mobile-overlay {
+    display: block
+}
+
+section#top-nav .container .mobileNavButton.show button .b {
+    opacity: 0
+}
+
+section#top-nav .container .mobileNavButton.show button .c {
+    opacity: 1
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .mobileNavButton.show {
+        display: none
+    }
+    section#top-nav .container .mobileNavButton.show button {
+        display: none
+    }
+    section#top-nav .container .mobileNavButton.show .mobile-overlay {
+        display: none
+    }
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .mobileNavButton {
+        display: none
+    }
+    section#top-nav .container .mobileNavButton button {
+        display: none
+    }
+    section#top-nav .container .mobileNavButton .mobile-overlay {
+        display: none
+    }
+}
+
+section#top-nav .container .SiteLogo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    height: 100%
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .SiteLogo {
+        flex-grow: unset
+    }
+}
+
+section#top-nav .container .NavigationBar {
+    width: 100%;
+    padding: 1rem 1.4rem
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .NavigationBar {
+        width: auto;
+        flex-grow: 1;
+        padding: unset
+    }
+}
+
+section#top-nav .container .NavigationBar nav {
+    display: flex;
+    flex-direction: column
+}
+
+section#top-nav .container .NavigationBar nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .NavigationBar nav ul {
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+}
+
+section#top-nav .container .NavigationBar nav a {
+    border-top: 1px solid #333;
+    color: #888;
+    font-family: RazerF5, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    padding: .625rem 0
+}
+
+section#top-nav .container .NavigationBar nav a:first-of-type {
+    border: none
+}
+
+section#top-nav .container .NavigationBar nav a:active {
+    color: #fff
+}
+
+section#top-nav .container .NavigationBar nav a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .NavigationBar nav a {
+        border: none
+    }
+}
+
+section#top-nav .container .NavigationBar nav a span {
+    font-family: inherit
+}
+
+section#top-nav .container .SearchBox {
+    width: 100%;
+    padding-top: 1rem
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .SearchBox {
+        width: auto;
+        padding-top: unset;
+        padding-right: 2vw
+    }
+}
+
+section#top-nav .container .SearchBox button {
+    display: none
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .SearchBox button {
+        display: block
+    }
+}
+
+section#top-nav .container .SearchBox .search-icon {
+    fill: #888;
+    stroke: #888
+}
+
+section#top-nav .container .SearchBox .search-icon:hover {
+    fill: #fff;
+    stroke: #fff
+}
+
+section#top-nav .container .SearchBox .search-box {
+    display: flex !important;
+    width: 100%;
+    background-color: #222;
+    padding: .625rem;
+    align-items: center;
+    z-index: 10
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .SearchBox .search-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #222;
+        padding: 1rem;
+        max-height: 60px;
+        width: 100%;
+        margin-left: 220px;
+        max-width: 92%
+    }
+}
+
+section#top-nav .container .SearchBox .search-box[hidden] {
+    border-radius: 1rem
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .SearchBox .search-box[hidden] {
+        display: none !important
+    }
+}
+
+section#top-nav .container .SearchBox .search-box .search-box__input {
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    margin-left: .3125rem
+}
+
+section#top-nav .container .SearchBox .search-box .close_btn {
+    fill: #888;
+    stroke: #888;
+    z-index: 0
+}
+
+section#top-nav .container .MiniCart {
+    display: none
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .MiniCart {
+        order: 4
+    }
+}
+
+section#top-nav .container .MiniCart .mini-cart-icon {
+    position: relative
+}
+
+section#top-nav .container .MiniCart .mini-cart-icon .count {
+    background-color: #44d62c;
+    border: 1px solid #44d62c;
+    border-radius: 50%;
+    color: #000;
+    font-family: RazerF5Bold, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-size: .5625rem;
+    font-weight: 500;
+    height: 13px;
+    right: 8px;
+    min-width: 13px;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    z-index: 5
+}
+
+section#top-nav .container #cartDropDown {
+    display: none;
+    background: #222;
+    border: 2px solid #555;
+    border-radius: .625rem;
+    left: auto;
+    margin: 0 .175rem;
+    max-width: 18rem;
+    min-width: 18rem;
+    position: absolute;
+    right: .75rem;
+    top: 3.3rem;
+    z-index: 2
+}
+
+section#top-nav .container #cartDropDown .tool-tip-pointer {
+    background: url(https://www.razer.com/assets/images/icons/bg-arrow-pointer-new.png) no-repeat 50%;
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: .55rem;
+    top: -.93rem;
+    width: 28px
+}
+
+section#top-nav .container #cartDropDown .product-detail-minicart {
+    margin: 1rem 0
+}
+
+section#top-nav .container #cartDropDown .product-detail-minicart .cta-checkout {
+    padding: 1.3rem 0 0;
+    text-align: center
+}
+
+section#top-nav .container #cartDropDown .product-detail-minicart .cta-checkout button {
+    min-width: 9.75rem
+}
+
+section#top-nav .container #cartDropDown .product-detail-minicart .cta-checkout .button-primary {
+    border-radius: .1875rem;
+    color: #000;
+    font-family: RazerF5Bold, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-size: .875rem;
+    font-weight: 700;
+    height: 2.5rem;
+    line-height: 3em;
+    max-height: none;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #44d62c;
+    border: 0
+}
+
+section#top-nav .container #cartDropDown .empty-cart-message {
+    border-bottom: 1px solid #555;
+    color: #b0b0b0;
+    font-family: Roboto, sans-serif;
+    font-size: .875rem;
+    margin: 0 1.25rem;
+    padding: .2rem 0 1rem;
+    text-align: center
+}
+
+section#top-nav .container #cartDropDown ul {
+    margin: .1rem 0;
+    padding: 0 1.25rem
+}
+
+section#top-nav .container #cartDropDown ul li {
+    border-bottom: 0 solid transparent;
+    border-top: 1px solid #555;
+    padding: .2rem 0 .4rem
+}
+
+section#top-nav .container #cartDropDown ul li:first-child {
+    border-top: 0 solid transparent
+}
+
+section#top-nav .container #cartDropDown ul a {
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: .875rem;
+    padding: .375rem 0 .5rem;
+    text-decoration: none
+}
+
+section#top-nav .container #cartDropDown ul a:hover {
+    color: #999
+}
+
+section#top-nav .container #cartDropDown ul a .icons {
+    margin-right: 5px
+}
+
+section#top-nav .container #cartDropDown ul .list-group-item {
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid #555;
+    border-top: 0 solid transparent;
+    border-right: none;
+    border-left: none;
+    margin-bottom: .9375rem;
+    padding: .2rem 0 1rem;
+    position: relative
+}
+
+section#top-nav .container #cartDropDown ul .list-group-item .media-body .media-body-header {
+    display: block;
+    font-size: .875rem;
+    font-weight: 400
+}
+
+section#top-nav .container #cartDropDown ul .list-group-item .image-parent img {
+    height: 50px;
+    object-fit: cover;
+    width: 60px
+}
+
+section#top-nav .container #cartDropDown .over-hr {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: .625rem;
+    line-height: .1em;
+    margin: -15px 20px 25px;
+    text-align: center
+}
+
+section#top-nav .container #cartDropDown .over-hr span {
+    background: #222;
+    padding: 0 10px;
+    position: relative;
+    z-index: 123
+}
+
+section#top-nav .container #cartDropDown .cart-link .count::before {
+    content: "("
+}
+
+section#top-nav .container #cartDropDown .cart-link .count::after {
+    content: ")"
+}
+
+section#top-nav .container #cartDropDown.cart-open {
+    display: block
+}
+
+section#top-nav .container .icons {
+    background: 0 0
+}
+
+section#top-nav .container .icons:before {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: " ";
+    display: inline-block
+}
+
+section#top-nav .container .icons.cart-icon:before {
+    background-image: url(https://www.razer.com/assets/images/icons/cart_icon.svg);
+    background-size: 25px auto;
+    height: 26px;
+    width: 26px
+}
+
+section#top-nav .container .icons.order-icon:before {
+    background-image: url(https://www.razer.com/assets/images/icons/orders_icon.svg);
+    background-size: 20px auto;
+    height: 26px;
+    width: 26px
+}
+
+section#top-nav .container .icons.user-icon:before {
+    background-image: url(https://www.razer.com/assets/images/icons/account_icon.svg);
+    background-size: 20px auto;
+    height: 26px;
+    width: 26px
+}
+
+section#top-nav .container .icons.circle-icon:before {
+    background-image: url(https://www.razer.com/assets/images/icons/RazerStore_Rewards_outlined_icon.svg);
+    background-size: 20px auto;
+    color: green;
+    height: 26px;
+    width: 26px
+}
+
+section#top-nav .container .icons.login-icon:before {
+    background-image: url(https://www.razer.com/assets/images/icons/signin_icon.svg);
+    background-size: 20px auto;
+    height: 26px;
+    width: 26px
+}
+
+section#top-nav .container .ths-logo {
+    flex-shrink: 1;
+    float: left;
+    margin-right: 30px;
+    width: 40px
+}
+
+@media screen and (min-width:769px) {
+    section#top-nav .container .ths-logo {
+        margin-right: 0
+    }
+}
+
+section#top-nav .container .btn.focus,
+section#top-nav .container .btn:focus {
+    box-shadow: none
+}
+
+section#top-nav .container .btn-search {
+    fill: #888;
+    stroke: #888
+}
+
+section#top-nav .container .btn-search:hover {
+    fill: #fff;
+    stroke: #fff
+}
+
+section#top-nav .container .mini-cart-icon {
+    fill: #888;
+    stroke: #888
+}
+
+section#top-nav .container .mini-cart-icon:hover {
+    fill: #fff;
+    stroke: #fff
+}
+
+section#top-nav .container .language {
+    float: right;
+    color: #b0b0b0;
+    margin-top: 2rem;
+    margin-right: 1.25rem;
+    text-transform: uppercase
+}
+
+@media screen and (max-width:420px) {
+    section#top-nav .container .language {
+        margin-right: .625rem
+    }
+}
+
+section#top-nav .container .language:hover {
+    color: #fff
+}
+
+section#top-nav .container .language span {
+    margin-right: 6px;
+    margin-left: 5px;
+    display: inline-block
+}
+
+section#top-nav .container .mobile-view {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    position: relative;
+    width: 100%
+}
+
+section#top-nav .container .mobile-view .MiniCart.enabled {
+    display: block
+}
+
+section#top-nav .container .mobile-view .SiteLogo .ths-logo {
+    margin: 0 auto
+}
+
+@media (min-width:769px) {
+    section#top-nav .container .mobile-view {
+        display: none
+    }
+}
+
+section#top-nav .container .mobile-nav-modal {
+    display: none !important
+}
+
+@media (max-width:767px) {
+    section#top-nav .container .mobile-nav-modal.show {
+        align-items: center;
+        display: flex !important;
+        flex-direction: column;
+        background: #000;
+        height: 100vh;
+        padding: 0 1rem;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%
+    }
+}
+
+section#top-nav .container .mobile-nav-modal .SiteLogo {
+    height: auto;
+    flex-grow: unset;
+    padding-top: 7px;
+    padding-left: 3px
+}
+
+section#top-nav .container .mobile-nav-modal .SearchBox .search-box .search-box__input {
+    font-size: 18px;
+    padding: .5em .5em
+}
+
+section#top-nav .container .mobile-nav-modal .NavigationBar {
+    padding: 1rem 0
+}
+
+section#top-nav .container .mobile-nav-modal .mobileNavButton {
+    position: absolute;
+    top: 0;
+    left: .625rem
+}
+
+section#top-nav .container:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+section#top-nav>.container>div:not(.mobile-view).MiniCart.enabled {
+    display: block
+}
+
+@media (max-width:767px) {
+    section#top-nav>.container>div:not(.mobile-view) {
+        display: none
+    }
+    section#top-nav>.container>div:not(.mobile-view).MiniCart.enabled {
+        display: none
+    }
+}
+
+section#top-nav .top-nav-banner {
+    background-color: #333;
+    margin: unset;
+    min-height: 80px;
+    width: 100%
+}
+
+section#top-nav .top-nav-banner .container {
+    align-items: flex-start;
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 0 1rem;
+    align-items: flex-start;
+    padding: 0 .625rem
+}
+
+@media screen and (min-width:646px) {
+    section#top-nav .top-nav-banner .container {
+        padding: 1rem 0;
+        align-items: center;
+        flex-direction: row
+    }
+}
+
+section#top-nav .top-nav-banner .container .left-column {
+    padding-top: .625rem;
+    padding-bottom: 0
+}
+
+@media screen and (min-width:646px) {
+    section#top-nav .top-nav-banner .container .left-column {
+        width: 60%
+    }
+}
+
+section#top-nav .top-nav-banner .container .right-column {
+    padding: .625rem 0
+}
+
+@media screen and (min-width:646px) {
+    section#top-nav .top-nav-banner .container .right-column {
+        width: 40%
+    }
+}
+
+section#top-nav .top-nav-banner .container .button {
+    background-color: #44d62c;
+    border: 0;
+    border-radius: .1875rem;
+    color: #000 !important;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: .725rem 1.625rem;
+    outline: 0;
+    text-transform: uppercase
+}
+
+section#top-nav .top-nav-banner .container p {
+    font-size: inherit;
+    margin: unset
+}
+
+section#top-nav .top-nav-banner .container a {
+    font-size: inherit
+}
+
+section#top-nav .top-nav-banner span {
+    color: #fff
+}
+
+section#top-nav .top-nav-banner .another-location {
+    display: block;
+    color: #999;
+    text-decoration: underline;
+    margin: .5rem 0
+}
+
+section#top-nav .top-nav-banner .another-location:hover {
+    color: #fff
+}
+
+section#top-nav .top-nav-banner .icon-close {
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: .65;
+    padding: 0 0 18px 10px;
+    color: #fff;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace
+}
+
+section#main-content {
+    background: none #222
+}
+
+section#main-content.no-sub-nav {
+    padding: 0
+}
+
+section#main-content:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+section#main-content .h3,
+section#main-content h3 {
+    color: var(--color-gray-800);
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 21px;
+    font-size: 24px
+}
+
+section#main-content .topics {
+    background-color: var(--color-gray-100);
+    display: block;
+    min-height: 245px
+}
+
+section#main-content .topics .container {
+    padding: 32px 0
+}
+
+section#main-content .topics .topics-header {
+    color: var(--color-gray-800);
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 21px;
+    font-size: 24px
+}
+
+section#main-content .topics .topics-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0
+}
+
+section#main-content .topics .topics-listing li {
+    align-items: flex-start;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    padding: 16px 0;
+    max-width: 160px;
+    text-align: center;
+    width: 100%
+}
+
+section#main-content .topics .topics-listing li a {
+    border: none
+}
+
+@media screen and (min-width:769px) {
+    section#main-content .topics .topics-listing li a {
+        border-right: 1px solid #707070
+    }
+}
+
+section#main-content .topics .topics-listing li:last-of-type a {
+    border: none
+}
+
+section#main-content .topics a {
+    display: inline-block;
+    color: var(--color-white);
+    font-size: 16px;
+    text-align: center;
+    padding: 0 16px;
+    height: 100%;
+    width: 100%
+}
+
+section#main-content .topics a:hover {
+    color: var(--color-green)
+}
+
+section#main-content .topics a img {
+    max-height: 32px;
+    height: 32px
+}
+
+section#main-content .topics a p {
+    color: inherit;
+    font-size: 14px;
+    padding-top: 8px;
+    margin: 0
+}
+
+section#main-content div.item-listing {
+    border-bottom: 1px solid #333;
+    margin-top: 2.5rem
+}
+
+section#main-content div.item-listing:first-of-type {
+    margin-top: 0
+}
+
+section#main-content div.item-listing:last-of-type {
+    border-bottom: none
+}
+
+section#main-content div.item-listing .viewing-count {
+    font-size: 16px;
+    margin-bottom: 2rem
+}
+
+section#main-content div.item-listing .container {
+    max-width: 1000px;
+    margin-top: 3rem;
+    margin-bottom: 3rem
+}
+
+section#main-content div.item-listing h2 {
+    color: #fff;
+    margin: 1.875rem 0;
+    text-align: center
+}
+
+section#main-content div.item-listing ul {
+    display: grid;
+    grid-gap: 2rem 1rem;
+    grid-template-columns: repeat(auto-fit, 130px);
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    width: 80vw
+}
+
+@media screen and (min-width:420px) {
+    section#main-content div.item-listing ul {
+        grid-gap: 2rem;
+        width: 100%
+    }
+}
+
+@media screen and (min-width:840px) {
+    section#main-content div.item-listing ul {
+        grid-template-columns: repeat(auto-fit, 150px)
+    }
+}
+
+@media screen and (min-width:992px) {
+    section#main-content div.item-listing ul {
+        grid-template-columns: repeat(auto-fit, 200px)
+    }
+}
+
+section#main-content div.item-listing ul li {
+    flex: 0 1 200px;
+    margin: 0;
+    max-width: 200px;
+    overflow: hidden
+}
+
+section#main-content div.item-listing ul li.legacy-products {
+    height: initial
+}
+
+section#main-content div.item-listing ul li.legacy-products p {
+    margin: 0
+}
+
+section#main-content div.item-listing ul li a {
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .75rem
+}
+
+section#main-content div.item-listing ul li a div.img-container {
+    background: 0 0;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+    max-height: 130px;
+    max-width: 130px;
+    padding: 10px;
+    overflow: hidden;
+    background: none #000
+}
+
+@media screen and (min-width:840px) {
+    section#main-content div.item-listing ul li a div.img-container {
+        height: 160px;
+        width: 160px;
+        max-height: 160px;
+        max-width: 160px;
+        padding: 8px
+    }
+}
+
+section#main-content div.item-listing ul li a div.img-container:before {
+    content: none
+}
+
+section#main-content div.item-listing ul li a div.img-container img {
+    align-self: center;
+    position: relative;
+    width: 100%;
+    max-height: 200px;
+    max-width: 200px;
+    padding: 0
+}
+
+section#main-content div.item-listing ul li a p {
+    margin: 0;
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 20px;
+    padding-right: .3125rem;
+    padding-bottom: 0;
+    padding-left: .3125rem;
+    padding-top: .5rem
+}
+
+section#main-content div.item-listing ul li a:hover * {
+    color: #44f62c
+}
+
+section#main-content div.item-listing .sticky-local-nav {
+    position: fixed;
+    top: 5rem;
+    left: 0rem;
+    z-index: 9
+}
+
+section#main-content div.item-listing .find-blade-model {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center
+}
+
+section#main-content div.item-listing .subcategory-filter-list {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem
+}
+
+section#main-content div.item-listing .subcategory-filter-list ul {
+    display: flex;
+    grid-gap: unset;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    justify-content: center
+}
+
+section#main-content div.item-listing .subcategory-filter-list ul li {
+    font-size: 16px;
+    flex: unset;
+    max-width: unset;
+    min-width: 50px;
+    display: inline-block;
+    padding: .25rem .5rem;
+    white-space: normal
+}
+
+section#main-content div.item-listing .subcategory-filter-list ul li a {
+    color: #fff
+}
+
+section#main-content div.item-listing .subcategory-filter-list ul li a .active,
+section#main-content div.item-listing .subcategory-filter-list ul li a:active,
+section#main-content div.item-listing .subcategory-filter-list ul li a:hover,
+section#main-content div.item-listing .subcategory-filter-list ul li a:visited {
+    color: var(--color-green)
+}
+
+section#main-content div.item-listing .sub-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    padding: .625rem 0;
+    background: none #000
+}
+
+section#main-content div.item-listing .sub-nav .sub-nav-wrapper {
+    position: relative;
+    height: 100%
+}
+
+section#main-content div.item-listing .sub-nav .sub-nav-wrapper ul {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 1.25rem;
+    white-space: nowrap
+}
+
+section#main-content div.item-listing .sub-nav .sub-nav-wrapper ul>li {
+    width: 100px;
+    display: inline-block;
+    white-space: normal
+}
+
+section#main-content div.item-listing .sub-nav .sub-nav-wrapper ul>li a {
+    text-align: center;
+    color: #999
+}
+
+section#main-content div.item-listing .sub-nav .sub-nav-wrapper ul>li a i {
+    margin: 0 auto
+}
+
+section#main-content div.item-listing .sub-nav .sub-nav-wrapper ul>li a span {
+    padding: .3125rem 0 0 0
+}
+
+section#main-content div.item-listing .sub-nav .sub-nav-wrapper ul>li a>* {
+    display: block
+}
+
+section#main-content div.item-listing.category-listing .main-listing ul {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr))
+}
+
+@media screen and (min-width:992px) {
+    section#main-content div.item-listing.category-listing .main-listing ul {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
+    }
+}
+
+section#main-content div.item-listing.category-listing .main-listing ul li {
+    background: 0 0;
+    display: flex;
+    max-width: 150px;
+    max-height: 120px;
+    margin: 0;
+    justify-content: center;
+    align-self: end
+}
+
+section#main-content div.item-listing.category-listing .main-listing ul li a:hover {
+    color: #44f62c;
+    text-decoration: none
+}
+
+section#main-content div.item-listing.category-listing .main-listing ul li a div.img-container {
+    height: unset;
+    width: 100%;
+    background: 0 0;
+    padding: 0
+}
+
+section#main-content div.item-listing.category-listing .main-listing ul li a div.img-container img {
+    max-height: 60px;
+    max-width: 80px;
+    width: 80px
+}
+
+section#main-content div.item-listing.category-listing .main-listing ul li a p {
+    color: inherit;
+    font-size: 14px;
+    margin-top: 0;
+    padding-top: 8px;
+    line-height: 16px
+}
+
+section#main-content div.item-listing.category-listing .more-listing {
+    padding-bottom: 5rem
+}
+
+section#main-content div.item-listing.category-listing .more-listing ul {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in-out .1s;
+    width: 100%
+}
+
+@media screen and (max-width:768px) {
+    section#main-content div.item-listing.category-listing .more-listing ul {
+        max-width: 480px
+    }
+}
+
+@media screen and (max-width:420px) {
+    section#main-content div.item-listing.category-listing .more-listing ul {
+        max-width: 290px;
+        margin: 0 auto
+    }
+}
+
+section#main-content div.item-listing.category-listing .more-listing ul.show {
+    height: 240px
+}
+
+@media screen and (max-width:900px) {
+    section#main-content div.item-listing.category-listing .more-listing ul.show {
+        height: 460px
+    }
+}
+
+@media screen and (max-width:768px) {
+    section#main-content div.item-listing.category-listing .more-listing ul.show {
+        height: 520px
+    }
+}
+
+@media screen and (max-width:420px) {
+    section#main-content div.item-listing.category-listing .more-listing ul.show {
+        height: 620px
+    }
+}
+
+section#main-content div.item-listing.category-listing .more-listing ul li {
+    max-height: 215px
+}
+
+@media screen and (max-width:420px) {
+    section#main-content div.item-listing.category-listing .more-listing ul li {
+        max-width: 140px
+    }
+}
+
+section#main-content div.item-listing.category-listing .more-listing ul li:last-child {
+    margin-right: 0
+}
+
+section#main-content div.item-listing.category-listing .more-listing .label-more-listing {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem 0;
+    cursor: pointer
+}
+
+section#main-content div.item-listing.category-listing .more-listing .label-more-listing>* {
+    vertical-align: middle
+}
+
+section#main-content div.item-listing.category-listing .more-listing .label-more-listing .fewer-products {
+    display: none
+}
+
+section#main-content div.item-listing.category-listing .more-listing .label-more-listing div {
+    transition: transform .3s ease-in-out .1s;
+    display: inline-block;
+    font-size: 26px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    margin-left: .3125rem
+}
+
+section#main-content div.item-listing.category-listing .more-listing .label-more-listing.show .more-products {
+    display: none
+}
+
+section#main-content div.item-listing.category-listing .more-listing .label-more-listing.show .fewer-products {
+    display: inline
+}
+
+section#main-content div.item-listing.category-listing .more-listing .label-more-listing.show div {
+    transform: rotate(90deg)
+}
+
+section#main-content div.contact-support {
+    min-height: 360px
+}
+
+section#main-content div.contact-support .container {
+    height: 100%
+}
+
+section#main-content div.contact-support .container h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.875rem;
+    padding-top: 1.25rem
+}
+
+section#main-content div.contact-support .container ul {
+    margin: 5rem 0;
+    text-align: center
+}
+
+section#main-content div.contact-support .container ul li {
+    display: table-cell;
+    min-width: 80px;
+    width: 23%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 1.875rem;
+    border-left: 1px solid #303030
+}
+
+@media screen and (max-width:645px) {
+    section#main-content div.contact-support .container ul li {
+        display: block;
+        border: 0;
+        margin-bottom: 3.125rem;
+        width: 100%
+    }
+}
+
+section#main-content div.contact-support .container ul li.community-section {
+    width: 27%
+}
+
+@media screen and (max-width:645px) {
+    section#main-content div.contact-support .container ul li.community-section {
+        width: 100%
+    }
+}
+
+section#main-content div.contact-support .container ul li:first-of-type {
+    border: none
+}
+
+section#main-content div.contact-support .container ul li * {
+    color: #fff
+}
+
+section#main-content div.contact-support .container ul li:hover * {
+    color: #44f62c
+}
+
+section#main-content div.contact-support .container ul li a {
+    color: #fff
+}
+
+section#main-content div.contact-support .container ul li a:hover {
+    color: #44f62c
+}
+
+section#main-content div.contact-support .container ul li a .img-container {
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    background: none transparent;
+    margin: 0 auto
+}
+
+section#main-content div.contact-support .container ul li a .img-container img {
+    width: 100%
+}
+
+section#main-content div.contact-support .container ul li a h2 {
+    margin-top: .625rem;
+    margin-bottom: .3125rem;
+    padding-left: .3125rem;
+    padding-right: .3125rem
+}
+
+section#main-content div.contact-support .container ul li a p {
+    padding: 0 10%
+}
+
+section#main-content div.contact-support .container ul li a strong {
+    font-family: RazerF5Bold, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji
+}
+
+section#main-content div.contact-support .container ul li .phone-numbers {
+    width: 80%;
+    margin: .625rem auto
+}
+
+section#main-content div.contact-support .container ul li .phone-numbers>div {
+    width: 50%;
+    padding-bottom: .3125rem;
+    float: left;
+    line-height: 20px
+}
+
+section#main-content div.contact-support .container ul li .phone-numbers:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+section#main-content div.contact-support .container ul li.no-hover a {
+    cursor: default
+}
+
+section#main-content div.contact-support .container ul li.no-hover:hover * {
+    color: #fff
+}
+
+section#main-content div.contact-support .container ul:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.home-panels {
+    background-color: var(--color-gray-10);
+    color: var(--color-white)
+}
+
+.home-panels .panel {
+    min-height: unset
+}
+
+.panel {
+    min-height: 270px
+}
+
+.panel .rn_TopAnswers li {
+    list-style: disc
+}
+
+.dark-popup2 {
+    position: relative;
+    background: #111;
+    padding: 20px;
+    width: auto;
+    max-width: 900px;
+    min-height: 90%;
+    margin: 20px auto
+}
+
+.dark-popup2 .model-number-wapper {
+    height: 100%
+}
+
+.dark-popup2 .model-number-wapper table td,
+.dark-popup2 .model-number-wapper table tr {
+    border: 1px dotted #fff;
+    padding: 8px
+}
+
+.mfp-content {
+    height: 100%
+}
+
+#cookies_popup_container {
+    background-color: #44d62c;
+    border-radius: .1875rem;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    padding: 1.5rem 1rem;
+    position: fixed;
+    bottom: 0;
+    -webkit-transition: right .55s ease-in-out;
+    -moz-transition: right .55s ease-in-out;
+    transition: right .55s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 9999;
+    opacity: .95
+}
+
+#cookies_popup_container * {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #000;
+    text-align: left;
+    font-weight: 400;
+    font-size: .875rem
+}
+
+#cookies_popup_container h2,
+#cookies_popup_container h4 {
+    font-family: RazerF5Bold, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-size: 1.3125rem;
+    font-weight: 700;
+    margin-bottom: .5rem
+}
+
+#cookies_popup_container .cookies_popup_text {
+    align-items: flex-end;
+    display: flex;
+    column-gap: .75rem;
+    flex-direction: row;
+    text-align: left;
+    line-height: 20px
+}
+
+#cookies_popup_container .cookies_popup_text:first-of-type {
+    margin-bottom: .5rem
+}
+
+#cookies_popup_container .cookies_popup_text p {
+    margin: 0
+}
+
+#cookies_popup_container .close_btn {
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+#cookies_popup_container a {
+    color: #000;
+    text-decoration: underline
+}
+
+#cookies_popup_container #agree_btn_container {
+    text-align: center;
+    vertical-align: top
+}
+
+#cookies_popup_container #agree_btn_container .btn {
+    font-family: RazerF5Bold, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    background-color: #44d62c;
+    border: 2px solid #000 !important;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5rem;
+    margin: 0;
+    max-height: 2.5rem;
+    min-width: 128px;
+    max-width: 140px;
+    width: 100%;
+    outline: 0;
+    position: relative;
+    padding: .6875rem 0;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: .1875rem;
+    background-clip: padding-box;
+    -webkit-transition: color .45s, background .45s, border .45s;
+    -moz-transition: color .45s, background .45s, border .45s;
+    transition: color .45s, background .45s, border .45s;
+    line-height: 1.3em
+}
+
+.floating-label {
+    position: relative;
+    height: 100%
+}
+
+.floating-label label {
+    color: #fff;
+    position: absolute;
+    opacity: .6;
+    top: 25%;
+    left: 1rem;
+    pointer-events: none;
+    transition: all .2s ease-in-out
+}
+
+.floating-label.is-floating label {
+    top: 2%;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 1
+}
+
+.floating-label.has-focus label {
+    color: #fff;
+    letter-spacing: 1.4;
+    opacity: .8 !important
+}
+
+.floating-label input {
+    padding: 1rem 1rem .5rem 1rem;
+    margin: 0 !important
+}
+
+.star-icon {
+    width: 40px;
+    height: 40px
+}
+
+.reviews-panel {
+    background-color: #111
+}
+
+.reviews-panel h2 {
+    position: relative
+}
+
+.reviews-panel h2 .borderBottom {
+    border: 1px solid var(--text-color);
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    bottom: 0
+}
+
+.reviews-panel .user-container {
+    font-weight: 500;
+    letter-spacing: .025rem
+}
+
+.splide__pagination {
+    bottom: -.5rem
+}
+
+.splide__pagination__page:focus-visible {
+    outline-style: solid;
+    outline-color: #6d9df7;
+    outline-width: 2px;
+    outline-offset: 2px
+}
+
+.splide__arrow {
+    background: 0 0
+}
+
+.splide__arrow:hover svg {
+    fill: var(--color-gray-50)
+}
+
+.splide__arrow:focus-visible {
+    outline-style: solid;
+    outline-color: #6d9df7;
+    outline-width: 2px;
+    outline-offset: 2px
+}
+
+.splide__arrow svg {
+    fill: var(--color-gray-30)
+}
+
+@media (min-width:768px) {
+    #cookies_popup_container {
+        max-width: 606px;
+        left: auto;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        opacity: 1;
+        width: 75%;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem
+    }
+    #cookies_popup_container #agree_btn_container {
+        display: inline-block;
+        text-align: right
+    }
+    #cookie_notice {
+        color: #44d62c;
+        font-size: 20px;
+        margin-bottom: 10px
+    }
+}
+
+@media (min-width:1200px) {
+    #cookies_popup_container {
+        bottom: 2.3125rem;
+        right: 2.1875rem
+    }
+}
+
+@media (max-width:767px) {
+    #cookies_popup_container .cookies_popup_text {
+        flex-direction: column;
+        align-items: flex-start
+    }
+    #cookies_popup_container #agree_btn_container {
+        width: 100%
+    }
+}
+
+@media (min-width:550px) {
+    #cookies_popup_container {
+        left: auto
+    }
+    #cookie_notice {
+        color: #44d62c;
+        font-size: 20px;
+        margin-bottom: 10px
+    }
+}
+
+@media (max-width:425px) {
+    #agree_btn_container {
+        padding-top: 1rem
+    }
+}
+
+@media (max-width:320px) {
+    #cookies_popup_container h2,
+    #cookies_popup_container h4 {
+        font-size: 22px
+    }
+}
+
+.search-results {
+    padding: .625rem 0 2.5rem 0
+}
+
+@media screen and (max-width:980px) {
+    .search-results {
+        padding: .625rem .625rem 2.5rem .625rem
+    }
+}
+
+.search-results .search-results-found {
+    color: #fff;
+    padding: .3125rem 0 0 0;
+    margin-bottom: 3rem
+}
+
+.search-results .search-results-item a {
+    color: #fff
+}
+
+.search-results .search-results-item a h2 {
+    font-size: 24px
+}
+
+.search-results .search-results-item a:visited {
+    color: #fff
+}
+
+.search-results .search-results-item a:active {
+    color: #fff
+}
+
+.search-results .search-results-item a:focus {
+    color: #fff
+}
+
+.search-results .search-results-item a:hover {
+    color: #44f62c
+}
+
+.search-results .search-results-item .search-results-text {
+    color: #999;
+    padding-top: .4375rem;
+    padding-bottom: 2rem
+}
+
+.search-results .search-results-item .faq-question {
+    padding-top: .4375rem;
+    padding-bottom: .3125rem;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.search-results .search-results-item .faq-answer {
+    padding-bottom: 2rem;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.search-results .search-results-pagination {
+    margin-top: .625rem;
+    font-size: 14px;
+    color: #888;
+    text-align: center
+}
+
+.search-results .search-results-pagination>* {
+    vertical-align: middle;
+    line-height: 36px
+}
+
+.search-results .search-results-pagination a.invisible {
+    visibility: hidden
+}
+
+.search-results .search-results-pagination a.pagination-link {
+    font-size: 36px;
+    color: #888;
+    text-decoration: none
+}
+
+.search-results .search-results-pagination a.pagination-link:active {
+    color: #888
+}
+
+.search-results .search-results-pagination a.pagination-link:visited {
+    color: #888
+}
+
+.search-results .search-results-pagination a.pagination-link:focus {
+    color: #888
+}
+
+.search-results .search-results-pagination a.pagination-link:hover {
+    color: #44f62c
+}
+
+.search-results .search-results-pagination a.pagination-link.previous {
+    padding-right: 1.25rem
+}
+
+.search-results .search-results-pagination a.pagination-link.next {
+    padding-left: 1.25rem
+}
+
+.error-containter {
+    text-align: center;
+    background: none #000;
+    padding: 2rem 0;
+    min-height: 70vh;
+    height: 100%
+}
+
+.error-containter h2 {
+    font-family: RazerF5Bold, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 2.25rem;
+    text-transform: uppercase
+}
+
+.error-containter p {
+    color: #fff;
+    padding-bottom: 1rem;
+    font-size: x-large
+}
+
+.error-containter .community {
+    margin: 0 auto;
+    padding-top: 3rem
+}
+
+.error-containter .community a {
+    padding: 0 .5rem
+}
+
+.error-containter .community a img {
+    width: 42px;
+    height: 42px
+}
+
+.other-help {
+    background-color: #1c1c1c;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem
+}
+
+.other-help h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.other-help .title {
+    color: #fff;
+    text-transform: uppercase
+}
+
+.other-help .item {
+    overflow: hidden;
+    margin-top: 20px;
+    font-weight: 300;
+    display: flex
+}
+
+.other-help .icon {
+    width: 80px
+}
+
+.other-help .text {
+    width: 90%;
+    padding-left: 10px;
+    margin-top: 20px
+}
+
+@media (max-width:420px) {
+    .other-help .text {
+        width: 75%;
+        margin-top: 0
+    }
+}
+
+.other-help a {
+    color: #44d62c
+}
+
+.callouts {
+    background-color: #000
+}
+
+.callouts .contact-support-panel h2,
+.callouts .insider-panel h2 {
+    font-size: 24px
+}
+
+.callouts .shout-out {
+    background: #000
+}
+
+.callouts .shout-out h2 {
+    color: #fff
+}
+
+.callouts .shout-out .addtional-support-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 260px;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    text-align: center
+}
+
+.callouts .shout-out .addtional-support-footer>div {
+    justify-items: stretch
+}
+
+.callouts .shout-out .addtional-support-footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: inherit;
+    padding: 0 0 1rem 0
+}
+
+.callouts .shout-out .addtional-support-footer p {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: inherit;
+    padding: 0 0 .8rem 0;
+    margin: 0
+}
+
+.callouts .shout-out .custom-search-input .input-group {
+    border-radius: 4px;
+    margin: 0
+}
+
+.callouts .shout-out .custom-search-input {
+    max-height: none;
+    height: 56px
+}
+
+.callouts .shout-out .custom-search-input .input-group input {
+    padding: .3125rem .3125rem .3125rem 2.125rem;
+    height: 100%;
+    font-size: 14px;
+    line-height: 18px
+}
+
+.callouts .shout-out .custom-search-input .input-group button {
+    right: initial;
+    left: 0
+}
+
+.callouts .shout-out .addtional-support-footer .mdc-button__label {
+    color: #000
+}
+
+@media screen and (max-width:800px) {
+    .callouts .shout-out .addtional-support-footer {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-column-gap: 10px;
+        grid-row-gap: 50px;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.75rem 20px
+    }
+    .callouts .shout-out .img-responsive {
+        width: 80%
+    }
+}
+
+@media screen and (max-width:479px) {
+    .callouts .shout-out .addtional-support-footer {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr)
+    }
+}
+
+.footer {
+    display: grid;
+    line-height: 1rem;
+    color: var(--color-white);
+    padding: 0 1rem
+}
+
+.footer * {
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-weight: 400
+}
+
+.footer label {
+    font-weight: 400;
+    margin-bottom: 0
+}
+
+.footer-section {
+    font-size: .875rem;
+    border-bottom: 1px solid var(--color-gray-600);
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+.footer-section p {
+    font-size: inherit
+}
+
+.footer-section label {
+    padding: .75em 0
+}
+
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap
+}
+
+.footer-section li {
+    list-style: none;
+    margin: .5em 0
+}
+
+.footer-section li:after {
+    display: inline-block;
+    content: "|";
+    color: var(--color-gray-900);
+    padding: 0 .5rem
+}
+
+.footer-section li:last-of-type:after {
+    display: none;
+    content: ""
+}
+
+.footer-section a {
+    color: var(--color-gray-900)
+}
+
+.footer-section a:hover {
+    color: var(--color-white)
+}
+
+.footer-company {
+    grid-row: 1/2
+}
+
+.footer-shop {
+    grid-row: 2/3
+}
+
+.footer-site {
+    grid-row: 5/6
+}
+
+.footer-site label+p {
+    color: var(--color-gray-900);
+    padding-right: .725rem
+}
+
+.footer-social {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.footer-social label {
+    color: var(--color-green);
+    font-size: .75rem;
+    width: 11rem
+}
+
+.footer-social .social-media {
+    display: flex
+}
+
+.footer-social .social-media img {
+    width: 30px;
+    margin-right: .5rem
+}
+
+.footer-localization {
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.footer-localization a {
+    color: var(--color-gray-900)
+}
+
+.footer-localization label+a::before {
+    display: inline-block;
+    content: "|";
+    padding: 0 .5rem
+}
+
+.footer-localization a:after {
+    display: inline-flex;
+    content: ">";
+    padding-left: .345rem
+}
+
+@media screen and (min-width:992px) {
+    .footer {
+        padding: 1.5em 0
+    }
+    .footer-section {
+        border-bottom: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+    .footer-section label {
+        padding: .25em .5em .25rem
+    }
+    .footer-section ul {
+        padding: .25em .5em .25rem
+    }
+    .footer-section li:after {
+        padding: 0 .25rem
+    }
+    .footer-company label,
+    .footer-shop label,
+    .footer-site label {
+        min-width: 5.715rem
+    }
+    .footer-company {
+        grid-column: 1/2;
+        grid-row: 1/2
+    }
+    .footer-shop {
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    .footer-site {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    .footer-site p {
+        margin: .25em 0
+    }
+    .footer-social {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: end;
+        align-self: center
+    }
+    .footer-localization {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-self: end;
+        align-self: center
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer {
+        max-width: 1200px;
+        margin: 0 auto
+    }
+}
+
+.footer-container {
+    background-color: var(--color-gray-200);
+    font-family: var(--font-family-Roboto);
+    font-size: 12px;
+    font-size: .75rem;
+    font-weight: 400;
+    padding-bottom: 1.5625rem;
+    padding-top: 0
+}
+
+.footer-container .row .col {
+    flex-basis: unset
+}
+
+.footer-container .footer-middle {
+    display: none;
+    padding-top: 9px
+}
+
+.footer-container .footer-label {
+    color: var(--color-white);
+    font-weight: 400;
+    min-width: 4.375rem;
+    padding-bottom: .75rem;
+    margin: 0
+}
+
+.footer-container .label-container ul li {
+    padding-bottom: .75rem
+}
+
+.footer-container a {
+    color: var(--color-gray-900);
+    font-family: var(--font-family-Roboto);
+    font-weight: 400
+}
+
+.footer-container a:hover {
+    color: var(--color-white);
+    text-decoration: underline
+}
+
+.footer-container span {
+    color: var(--color-gray-900)
+}
+
+.footer-container .razer-slogan {
+    color: var(--color-green);
+    font-size: 12px;
+    font-size: .75rem;
+    letter-spacing: .03125rem;
+    padding-top: .3rem;
+    padding-right: .4rem;
+    padding-bottom: .25rem
+}
+
+.footer-container .social-media .icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5rem;
+    margin-bottom: 0;
+    margin-left: .3125rem;
+    margin-right: .3125rem;
+    width: 1.5rem
+}
+
+.footer-container .social-media .icon-facebook {
+    background-image: url(https://assets2.razerzone.com/images/phoenix/SM0001-facebook.svg)
+}
+
+.footer-container .footer-top .label-container div {
+    display: none
+}
+
+.footer-container .footer-bottom {
+    padding: .8rem 0 1.25rem
+}
+
+.footer-container .footer-bottom .copyright {
+    color: var(--color-white);
+    padding-top: 1rem
+}
+
+.footer-container .footer-bottom .legal-term {
+    padding-bottom: .625rem;
+    padding-top: .625rem
+}
+
+.footer-container .footer-bottom .legal-term ul {
+    margin: 0
+}
+
+.footer-container .footer-bottom .legal-term li {
+    display: inline-block
+}
+
+.footer-container .footer-bottom .legal-term li:not(:first-child)>span {
+    padding: 0 .1875rem
+}
+
+.footer-container .location-selector {
+    padding: 0 0 .5rem
+}
+
+.footer-container .location-selector .label-container {
+    border-top: 1px solid #3b3b3b;
+    border-bottom: 0;
+    padding: 1.75rem 0 0;
+    margin: 0 .5rem;
+    cursor: default
+}
+
+.footer-container .label-container {
+    padding: 0;
+    border-bottom: 1px solid #3b3b3b
+}
+
+.footer-container .label-toggle {
+    color: var(--color-white);
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+    min-width: 4.375rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    line-height: normal
+}
+
+.footer-container .label-toggle button {
+    background: 0 0;
+    border: none;
+    color: var(--color-white);
+    padding: 0;
+    text-align: left;
+    width: 100%
+}
+
+.footer-container .label-toggle>span {
+    display: none
+}
+
+@media (min-width:769px) {
+    .footer-container .label-toggle button {
+        display: none
+    }
+    .footer-container .label-toggle>span {
+        display: block
+    }
+}
+
+.footer-container .footer-toggle-icon {
+    display: block;
+    float: right;
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 15px;
+    font-weight: 300;
+    transition: transform .2s
+}
+
+.footer-container .footer-toggle-icon:hover {
+    text-decoration: none
+}
+
+.footer-container .footer-toggle-icon::after {
+    content: "+"
+}
+
+.footer-container .footer-active .footer-toggle-icon {
+    transform: rotate(45deg)
+}
+
+@media screen and (min-width:768px) {
+    .footer-container {
+        padding-top: 1.5625rem
+    }
+    .footer-container .row .col {
+        flex-basis: 0
+    }
+    .footer-container .footer-top .label-container div {
+        display: block
+    }
+    .footer-container .razer-slogan {
+        font-size: 14px;
+        font-size: .875rem;
+        padding-top: 0
+    }
+    .footer-container .social-media .icon {
+        height: 1.875rem;
+        width: 1.875rem
+    }
+    .footer-container .line-divider {
+        border-bottom: 1px solid var(--color-gray-500);
+        margin: 1rem 0
+    }
+    .footer-container .footer-bottom {
+        padding: 0 15px
+    }
+    .footer-container .footer-bottom .copyright {
+        color: var(--color-gray-900);
+        padding-right: 1.3rem;
+        padding-top: 0
+    }
+    .footer-container .footer-bottom .legal-term {
+        padding-bottom: 0;
+        padding-top: 0
+    }
+    .footer-container .footer-bottom .legal-term li:not(:first-child)>span {
+        color: var(--color-gray-900);
+        padding: 0 1rem !important
+    }
+    .footer-container .location-selector {
+        padding: 0 15px
+    }
+    .footer-container .location-selector .label-container {
+        border-top: 0;
+        border-bottom: 0;
+        padding: 0;
+        margin: 0;
+        cursor: default
+    }
+    .footer-container .label-container {
+        border-bottom: none
+    }
+    .footer-container .label-toggle {
+        padding-top: 0;
+        padding-bottom: .75rem;
+        cursor: initial
+    }
+    .footer-container .footer-toggle-icon {
+        display: none
+    }
+}
+
+.razer-link {
+    cursor: pointer;
+    color: #fff !important
+}
+
+.razer-link:after {
+    content: ">";
+    color: #0f0;
+    margin-left: .3125rem
+}
+
+.razer-link:visited {
+    color: #fff
+}
+
+.razer-link:active {
+    color: #fff
+}
+
+.razer-link:focus {
+    color: #fff
+}
+
+.razer-link:hover {
+    color: #44f62c !important
+}
+
+.razer-link:hover:after {
+    color: #44f62c !important
+}
+
+.large-cta {
+    color: #0f0;
+    display: block;
+    font-size: 18px;
+    border: 1px solid #0f0;
+    padding: 1.25rem 2.1875rem;
+    margin: .625rem 0;
+    text-transform: uppercase;
+    max-width: 300px;
+    width: 100%;
+    margin: .625rem auto
+}
+
+.large-cta:visited {
+    color: #0f0
+}
+
+.large-cta:active {
+    color: #0f0
+}
+
+.large-cta:focus {
+    color: #0f0
+}
+
+.large-cta:hover {
+    color: #44f62c;
+    border: 1px solid #44f62c
+}
+
+mark {
+    background: 0 0;
+    font-family: RazerF5Bold, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-weight: 600;
+    color: inherit
+}
+
+#razercare-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px;
+    padding-bottom: 3rem
+}
+
+#razercare-banner-container.two-columns {
+    justify-content: space-around;
+    align-items: center
+}
+
+#razercare-banner-container a {
+    background-color: #1c1c1c;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    width: 49%
+}
+
+#razercare-banner-container a:hover {
+    color: #fff
+}
+
+#razercare-banner-container a .item {
+    height: 110px;
+    width: 110px
+}
+
+#razercare-banner-container a .razercare-banner-image {
+    background-color: #00d72b
+}
+
+#razercare-banner-container a .razercare-banner-content {
+    flex-grow: 1;
+    padding: .8rem 5rem .6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+#razercare-banner-container a .razercare-banner-content h3 {
+    font-size: 1.5rem;
+    font-family: RazerF5Bold, Roboto, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px
+}
+
+#razercare-banner-container a .razercare-banner-content span {
+    font-size: .85rem;
+    font-family: RazerF5, Roboto, sans-serif;
+    color: #999;
+    line-height: .8rem
+}
+
+#razercare-banner-container a .razercare-banner-content span:after {
+    font-family: RazerF5Light, Roboto, sans-serif;
+    content: "›";
+    margin-left: 2px;
+    color: #00d72b;
+    font-size: 1.5rem;
+    vertical-align: middle
+}
+
+#razercare-banner-container a#razercare-store-banner .razercare-banner-image {
+    background: 0 0
+}
+
+#razercare-banner-container a#razercare-store-banner .razercare-banner-content {
+    padding-right: 3rem
+}
+
+@media (max-width:900px) {
+    #razercare-banner-container a .razercare-banner-content,
+    #razercare-banner-container a#razercare-store-banner .razercare-banner-content {
+        padding-right: 2rem
+    }
+}
+
+@media (max-width:800px) {
+    #razercare-banner-container a .razercare-banner-content,
+    #razercare-banner-container a#razercare-store-banner .razercare-banner-content {
+        padding-right: 1rem
+    }
+}
+
+@media (max-width:767px) {
+    #razercare-banner-container {
+        flex-direction: column
+    }
+    #razercare-banner-container a {
+        width: 70%;
+        margin-bottom: 1rem
+    }
+    #razercare-banner-container a:last-child {
+        margin-bottom: initial
+    }
+}
+
+@media (max-width:420px) {
+    #razercare-banner-container a {
+        width: 86%
+    }
+    #razercare-banner-container a .razercare-banner-content,
+    #razercare-banner-container a#razercare-store-banner .razercare-banner-content {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+    #razercare-banner-container a .razercare-banner-content h3 {
+        font-size: 1rem
+    }
+    #razercare-banner-container a .razercare-banner-content span {
+        font-size: .75rem;
+        line-height: .95rem
+    }
+}
+
+@media (max-width:320px) {
+    #razercare-banner-container a {
+        width: 96%
+    }
+}
+
+.btn:focus-visible {
+    border-radius: 0;
+    outline-style: solid;
+    outline-color: #6d9df7;
+    outline-width: 2px;
+    outline-offset: 0
+}
